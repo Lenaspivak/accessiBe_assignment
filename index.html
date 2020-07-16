@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>accessiBe home assignment</title>
+    <link rel="stylesheet" href="styling/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling/slider.css" media="screen">
+</head>
+<body>
+<div id="fb-root"></div>
+
+<div class="mainWrapper">
+    <header>
+        <span>MY <span>LOGO</span></span>
+    </header>
+    <div class="sides">
+        <div class="sideOne">
+            <h1>An amazing header</h1>
+
+            <p class="subText">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p class="subText">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <div class="popUpOpener button">Show me that slider</div>
+        </div>
+        <div class="sideTwo">
+            <div class="formWrapper">
+                <form>
+                    <div class="title">Register</div>
+                    <div class="error">Please fill all required fields</div>
+                    <span class="flex">
+                    <input id="name" type="text" placeholder="First Name">
+                    <input id="last" type="text" placeholder="Last Name">
+                </span>
+
+                    <input id="email" type="text" placeholder="Email">
+                    <input id="phone" type="number" placeholder="Phone no">
+                    <button class="button" type="submit">Let's do that</button>
+                </form>
+
+                <div class="thankyou hide">
+                    <span>Thank you!</span> we'll get beck to you soon!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
+<div class="popupWrapper">
+    <div class="popUp">
+        <div class="inner">
+            <div class="close"><img src="assets/close.svg"> </div>
+            <div class="slider">
+                <div class="title">This is the amazing slider</div>
+                <div class="sliderContainer">
+                    <div class="blogSlides fade">
+                        <div class="blog-slider__numbertext">1 / 3</div>
+                        <img src="https://picsum.photos/600/220?random=1" class="gallery-cell" alt="random">
+
+                    </div>
+
+                    <div class="blogSlides fade">
+                        <div class="blog-slider__numbertext">2 / 3</div>
+                        <img src="https://picsum.photos/600/220?random=2" class="gallery-cell" alt="random">
+
+                    </div>
+
+                    <div class="blogSlides fade">
+                        <div class="blog-slider__numbertext">3 / 3</div>
+                        <img src="https://picsum.photos/600/220?random=3" class="gallery-cell" alt="random">
+
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <div class="blogSlider__dots" style="text-align:center">
+                    <span class="blogSlider__dots--dot" onclick="currentSlide(1)"></span>
+                    <span class="blogSlider__dots--dot" onclick="currentSlide(2)"></span>
+                    <span class="blogSlider__dots--dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/scripts.js"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=180896555354770&autoLogAppEvents=1" nonce="a2HQu3uY"></script>
+<script src="scripts/slider.js"></script>
+</body>
+</html>

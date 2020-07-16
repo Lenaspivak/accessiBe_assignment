@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin-bottom: 0;
+  font-family: "Heebo", sans-serif;
+}
+
+.mainWrapper {
+  margin: 0 auto;
+  max-width: 2000px;
+  padding: 40px 80px;
+}
+.mainWrapper header {
+  font-weight: 200;
+  font-size: 23px;
+  color: #04225C;
+  margin-bottom: 20px;
+}
+.mainWrapper header span span {
+  font-weight: 700;
+}
+.mainWrapper h1 {
+  font-size: 68px;
+  color: #04225C;
+  line-height: 71px;
+}
+.mainWrapper .subText {
+  font-size: 17px;
+  padding-right: 20px;
+  line-height: 28px;
+  font-weight: 200;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.sides {
+  display: flex;
+}
+@media only screen and (max-width: 1024px) {
+  .sides {
+    flex-direction: column;
+  }
+  .sides .sideOne,
+.sides .sideTwo {
+    width: 100% !important;
+  }
+}
+.sides .sideOne {
+  width: 40%;
+}
+.sides .sideTwo {
+  width: 60%;
+  background-image: url(../assets/illust.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 92px;
+}
+
+.popupWrapper {
+  padding: 30px;
+  max-width: 320px;
+  border-radius: 4px;
+  margin: 88px auto 0;
+  display: grid;
+}
+.popupWrapper .popUp {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.71);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+.popupWrapper .popUp .inner {
+  background-color: #ffffff;
+  padding: 50px 30px 10px;
+  width: 80%;
+  border-radius: 5px;
+  position: relative;
+  margin: 150px auto;
+}
+.popupWrapper .popUp .inner .close {
+  position: absolute;
+  right: 17px;
+  top: 18px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.popupWrapper .popUp .inner ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.popupWrapper .popUp .inner ul li {
+  margin: 20px 10px;
+  width: 13px;
+  height: 13px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+.title {
+  margin-bottom: 14px;
+  color: #04225C;
+  font-size: 22px;
+}
+
+.formWrapper {
+  border-radius: 4px;
+  margin-top: 156px;
+}
+.formWrapper form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.formWrapper form .error {
+  display: none;
+  position: absolute;
+  color: #a7180d;
+  top: 33px;
+  font-size: 14px;
+}
+.formWrapper .hide {
+  display: none;
+}
+.formWrapper input {
+  margin: 12px auto;
+  background-color: #ffffffe3;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #310b5f;
+}
+.formWrapper .flex {
+  display: flex;
+}
+.formWrapper .flex input:first-child {
+  margin-right: 20px;
+}
+.formWrapper .thankyou {
+  text-align: center;
+}
+.formWrapper .thankyou span {
+  font-size: 42px;
+  display: block;
+  color: #03225b;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: #6296f4;
+  border-radius: 50px;
+  padding: 0 20px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  height: 64px;
+  line-height: 64px;
+  color: #ffffff;
+  transition: all 0.8s ease-out;
+  cursor: pointer;
+  margin: 30px 0;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.button.popUpOpener {
+  width: 250px;
+}
+
+.fb-like {
+  margin: 30px auto;
+  display: block !important;
+  position: relative !important;
+  padding-left: 80px;
+}
+.fb-like:before {
+  content: "";
+  height: 2px;
+  width: 280px;
+  background-color: #ccc;
+  position: absolute;
+  top: -40px;
+}
+
+/*# sourceMappingURL=style.css.map */
