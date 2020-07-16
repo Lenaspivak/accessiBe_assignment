@@ -12,6 +12,18 @@ body{
   max-width: 2000px;
   padding: 40px 80px;
 
+  @media only screen and (max-width: 1024px) {
+    padding: 20px;
+
+    .sides{
+      flex-direction: column;
+      .sideOne,
+      .sideTwo{
+        width: 100% !important;
+      }
+    }
+  }
+
   header{
     font-weight: 200;
     font-size: 23px;
@@ -43,14 +55,7 @@ body{
 .sides{
   display: flex;
 
-  @media only screen and (max-width: 1024px) {
-    flex-direction: column;
-    .sideOne,
-    .sideTwo{
-      width: 100% !important;
-    }
 
-  }
 
   .sideOne{
     width: 40%;

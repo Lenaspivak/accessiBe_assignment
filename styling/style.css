@@ -13,6 +13,18 @@ body {
   max-width: 2000px;
   padding: 40px 80px;
 }
+@media only screen and (max-width: 1024px) {
+  .mainWrapper {
+    padding: 20px;
+  }
+  .mainWrapper .sides {
+    flex-direction: column;
+  }
+  .mainWrapper .sides .sideOne,
+.mainWrapper .sides .sideTwo {
+    width: 100% !important;
+  }
+}
 .mainWrapper header {
   font-weight: 200;
   font-size: 23px;
@@ -38,15 +50,6 @@ body {
 
 .sides {
   display: flex;
-}
-@media only screen and (max-width: 1024px) {
-  .sides {
-    flex-direction: column;
-  }
-  .sides .sideOne,
-.sides .sideTwo {
-    width: 100% !important;
-  }
 }
 .sides .sideOne {
   width: 40%;
