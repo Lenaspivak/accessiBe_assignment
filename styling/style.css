@@ -199,5 +199,12 @@ body {
   position: absolute;
   top: -40px;
 }
+@media only screen and (max-width: 1024px) {
+  .fb-like {
+    padding-left: 60px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
